@@ -1,8 +1,12 @@
-@import './header.scss';
-@import './caurousel.scss';
-@import './service.scss';
-@import './banner.scss';
-@import './product.scss';
-@import './comment.scss';
-@import './blog.scss';
-@import './footer.scss';
+@import "./base/base";
+
+@import "./helpers/animation";
+@import "./helpers/mixin";
+@import "./helpers/variable";
+
+@import "./pages/comment";
+@import "./pages/blog";
+@import "./pages/subscribe";
+@import "./pages/footer";
+
+@import "./pages/register";

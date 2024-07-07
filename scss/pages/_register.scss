@@ -1,0 +1,71 @@
+.register {
+  padding: 80px;
+
+  .register_window {
+    margin: 0 auto;
+    max-width: 600px;
+
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    padding: 23px 30px 30px;
+    h2 {
+      font-weight: $fw-7;
+      font-size: $fs-3;
+    }
+
+    input {
+      color: $text-grey2;
+      border: 1px solid $text-grey4;
+      padding: 12px 10px;
+      width: 100%;
+      font-size: $fs-xm;
+      background: $bg-grey1;
+      margin: 5px 0 20px;
+    }
+
+    .register_password {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      input {
+      }
+    }
+
+    .register_gender {
+      legend {
+        font-size: $fs-2;
+        font-weight: $fw-7;
+      }
+      .register_radio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .register_radio_item {
+          display: grid;
+          grid-template-columns: 1fr 4fr;
+
+          label {
+          }
+
+          input {
+            margin: 0;
+          }
+        }
+      }
+    }
+    button {
+      margin-top: 20px;
+      color: $white;
+      font-size: $fs-1;
+      font-weight: $fw-7;
+      border: none;
+      background-color: $green;
+      padding: 10px 25px;
+      transition: all 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $bg-main;
+      }
+    }
+  }
+}

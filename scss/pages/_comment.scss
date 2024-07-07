@@ -1,0 +1,60 @@
+.comment {
+  background-image: url(../../image/bg-testimonial-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: $white;
+  text-align: center;
+  padding: 80px 0;
+
+  .comment_feedback {
+    h3 {
+      font-size: $fs-5;
+      line-height: 1.3;
+      font-weight: $fw-9;
+    }
+
+    .feedback_profile {
+      img {
+        margin: 20px auto;
+      }
+
+      h4 {
+        font-size: $fs-xm;
+        font-weight: $fw-9;
+      }
+    }
+  }
+  .comment_logo {
+    margin-top: 50px;
+
+    &:hover .slick-prev {
+      transform: translate(50px, -50%);
+      opacity: 1;
+    }
+
+    .slick-prev {
+      @include styleSlickArrow("<", 80px);
+    }
+
+    &:hover .slick-next {
+      transform: translate(-50px, -50%);
+      opacity: 1;
+    }
+    .slick-next {
+      @include styleSlickArrow(">", -80px);
+    }
+
+    .logo_container {
+      padding: 0 10px;
+      .logo {
+        background-color: $white;
+        padding: 20px 0;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
