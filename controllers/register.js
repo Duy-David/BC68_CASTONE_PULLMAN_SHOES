@@ -3,10 +3,8 @@
 let userArr = {};
 
 // Take data from registration form
-
 document.getElementById("register_btn").onclick = (e) => {
   e.preventDefault();
-  // document.getElementById("register_form").reset();
 
   let allTag = document.querySelectorAll("input");
 
@@ -37,31 +35,31 @@ document.getElementById("register_btn").onclick = (e) => {
     }
 
     // Check name
-    if (id === "name") {
+    if (id === "name" && value) {
       checkNameResult = checkName(tag, 3, 20);
       // console.log(checkNameResult);
     }
 
     // Check phone
-    if (id === "phone") {
+    if (id === "phone" && value) {
       checkPhoneResult = checkPhone(tag);
       // console.log(checkPhoneResult);
     }
 
     // Check email
-    if (id === "email") {
+    if (id === "email" && value) {
       checkEmailResult = checkEmail(tag);
       // console.log(checkEmailResult);
     }
 
     // Check password
-    if (id === "password") {
+    if (id === "password" && value) {
       checkPassResult = checkPassword(tag);
       // console.log(checkPassResult);
     }
 
     // check repeatPass
-    if (id === "repeatPassword") {
+    if (id === "repeatPassword" && value) {
       checkRePassResult = checkRePass(tag);
       // console.log(checkRePassResult);
     }
@@ -119,7 +117,7 @@ document.getElementById("register_btn").onclick = (e) => {
           },
         }).showToast();
       });
+    document.getElementById("register_form").reset();
   }
-
   // document.querySelector("input").reset();
 };

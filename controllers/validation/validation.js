@@ -39,7 +39,7 @@ let checkRadio = (tag) => {
 let checkName = (tag, min, max) => {
   let { id, value } = tag;
 
-  if (value && value.length >= min && value.length <= max) {
+  if (value.length >= min && value.length <= max) {
     return true;
   } else {
     document.querySelector(
@@ -55,7 +55,7 @@ let checkPhone = (tag) => {
   let phoneRegex =
     /^[\+]?[0-9]{0,3}\W?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
 
-  if (value && phoneRegex.test(value)) {
+  if (phoneRegex.test(value)) {
     return true;
   } else {
     document.querySelector(`.${id}_note`).innerHTML = "Số điện thoại chưa đúng";
@@ -70,7 +70,7 @@ let checkEmail = (tag) => {
   let emailRe =
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
-  if (value && emailRe.test(value.toLowerCase())) {
+  if (emailRe.test(value.toLowerCase())) {
     return true;
   } else {
     document.querySelector(`.${id}_note`).innerHTML = "Email chưa hợp lệ";
@@ -86,7 +86,7 @@ let checkPassword = (tag) => {
 
   let passRe = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(\W|_)).{5,}$/i;
 
-  if (value && passRe.test(value)) {
+  if (passRe.test(value)) {
     pass = value;
 
     return true;
@@ -103,7 +103,7 @@ let checkRePass = (tag) => {
   let { id, value } = tag;
 
   //   console.log(pass);
-  if (id === "repeatPassword" && value && pass === value) {
+  if (id === "repeatPassword" && pass === value) {
     // console.log(pass);
     return true;
   } else {
