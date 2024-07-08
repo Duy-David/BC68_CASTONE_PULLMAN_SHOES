@@ -1,7 +1,7 @@
 .register {
   padding: 80px;
 
-  .register_window {
+  #register_form {
     margin: 0 auto;
     max-width: 600px;
 
@@ -12,6 +12,15 @@
       font-size: $fs-3;
     }
 
+    label {
+      margin-top: 20px;
+      display: block;
+    }
+
+    span {
+      color: red;
+    }
+
     input {
       color: $text-grey2;
       border: 1px solid $text-grey4;
@@ -19,13 +28,13 @@
       width: 100%;
       font-size: $fs-xm;
       background: $bg-grey1;
-      margin: 5px 0 20px;
+      margin-top: 5px;
     }
 
     .register_password {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
       input {
       }
     }
@@ -34,6 +43,7 @@
       legend {
         font-size: $fs-2;
         font-weight: $fw-7;
+        margin-top: 20px;
       }
       .register_radio {
         display: grid;
@@ -44,6 +54,7 @@
           grid-template-columns: 1fr 4fr;
 
           label {
+            margin: 0;
           }
 
           input {

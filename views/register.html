@@ -25,19 +25,21 @@
     </header>
     <section class="register">
       <div class="container">
-        <div class="register_window">
+        <form id="register_form">
           <h2>Registration Form</h2>
           <label for="name">Your Name</label>
           <input id="name" type="text" placeholder="Enter Your Full Name*" />
+          <span class="name_note"></span>
           <label for="phone">Your Phone Number</label>
           <input
             id="phone"
             type="text"
             placeholder="Enter Your Phone Number*"
           />
+          <span class="phone_note"></span>
           <label for="email">Your Email</label>
           <input id="email" type="text" placeholder="Enter Your Email*" />
-
+          <span class="email_note"></span>
           <label for="password">Your Password</label>
           <div class="register_password">
             <input
@@ -50,9 +52,13 @@
               type="text"
               placeholder="Repeat Your Password*"
             />
+            <span class="password_note"></span>
+            <span class="repeatPassword_note"></span>
           </div>
           <div class="register_gender">
             <legend>Select Your Gender</legend>
+            <span class="gender_note"></span>
+
             <div class="register_radio">
               <div class="register_radio_item">
                 <input type="radio" id="gender" name="gender" value="true" />
@@ -65,7 +71,7 @@
             </div>
           </div>
           <button id="register_btn">Register</button>
-        </div>
+        </form>
       </div>
     </section>
     <footer>
@@ -84,6 +90,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- VALIDATION JS -->
+    <script src="./../controllers/validation/validation.js"></script>
 
     <!-- REGISTER JS -->
     <script src="../controllers/register.js"></script>

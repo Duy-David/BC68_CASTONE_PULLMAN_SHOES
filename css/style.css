@@ -470,46 +470,57 @@ footer .footer_bot .footer_bot_content .copyright i {
 .register {
   padding: 80px;
 }
-.register .register_window {
+.register #register_form {
   margin: 0 auto;
   max-width: 600px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   padding: 23px 30px 30px;
 }
-.register .register_window h2 {
+.register #register_form h2 {
   font-weight: 700;
   font-size: 24px;
 }
-.register .register_window input {
+.register #register_form label {
+  margin-top: 20px;
+  display: block;
+}
+.register #register_form span {
+  color: red;
+}
+.register #register_form input {
   color: #555555;
   border: 1px solid #999999;
   padding: 12px 10px;
   width: 100%;
   font-size: 14px;
   background: #f7f7f7;
-  margin: 5px 0 20px;
+  margin-top: 5px;
 }
-.register .register_window .register_password {
+.register #register_form .register_password {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
-.register .register_window .register_gender legend {
+.register #register_form .register_gender legend {
   font-size: 20px;
   font-weight: 700;
+  margin-top: 20px;
 }
-.register .register_window .register_gender .register_radio {
+.register #register_form .register_gender .register_radio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.register .register_window .register_gender .register_radio .register_radio_item {
+.register #register_form .register_gender .register_radio .register_radio_item {
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
-.register .register_window .register_gender .register_radio .register_radio_item input {
+.register #register_form .register_gender .register_radio .register_radio_item label {
   margin: 0;
 }
-.register .register_window button {
+.register #register_form .register_gender .register_radio .register_radio_item input {
+  margin: 0;
+}
+.register #register_form button {
   margin-top: 20px;
   color: white;
   font-size: 16px;
@@ -520,6 +531,6 @@ footer .footer_bot .footer_bot_content .copyright i {
   transition: all 0.5s;
   cursor: pointer;
 }
-.register .register_window button:hover {
+.register #register_form button:hover {
   background-color: #1a1a1a;
 }/*# sourceMappingURL=style.css.map */
