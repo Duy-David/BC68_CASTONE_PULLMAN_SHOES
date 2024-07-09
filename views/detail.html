@@ -1,42 +1,577 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-    </head>
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <body>
-        <header>
-            <!-- place navbar here -->
-        </header>
-        <main></main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+
+    <!-- slick carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+
+
+    <!-- detail.css -->
+    <link rel="stylesheet" href="../css/detail.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <!-- breadcrumb-area -->
+    <div class="breadcrumb-area breadcrumb-img bg-img" data-bg="../assets/img/Bg-img/banner-bg.jpg"
+        style="background-image: url(../assets/img/Bg-img/banner-bg.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-wrap">
+                        <nav aria-label="breadcrumb">
+                            <h3 class="breadcrumb-title">SHOP</h3>
+                            <ul class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="../index.html"><i class="fa fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Product Details</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="product-details pt-5">
+                <div class="product-details-inner">
+                    <div class="row detail_display">
+                        <div class="col-sm-12 col-md-5 col-12 product-card__image-box">
+                            <div class="product-img-lg">
+                                <img id="img" src="../assets/img/product/product-details-img1.jpg" alt="shoes"
+                                    class="product-card__image img-fluid">
+                            </div>
+                            <div class="row mt-3">
+                                <div class="product-img-sm col-3">
+                                    <img src="../assets/img/product/product-1.jpg" alt="shoes"
+                                        class="product-card__image img-fluid">
+                                </div>
+                                <div class="product-img-sm col-3">
+                                    <img src="../assets/img/product/product-2.jpg" alt="shoes"
+                                        class="product-card__image img-fluid">
+                                </div>
+                                <div class="product-img-sm col-3">
+                                    <img src="../assets/img/product/product-3.jpg" alt="shoes"
+                                        class="product-card__image img-fluid">
+                                </div>
+                                <div class="product-img-sm col-3">
+                                    <img src="../assets/img/product/product-4.jpg" alt="shoes"
+                                        class="product-card__image img-fluid">
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-sm-12 col-md-7 col-12 product-card__info">
+
+                            <div class="product-details-des">
+                                <h3 class="product-name">Premium Mens Sports Lather Keds</h3>
+                                <div class="ratings d-flex">
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <div class="pro-review">
+                                        <span>1 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="price-old"><del>$<span id="price-old">90</span>.00</del></span>
+                                    <span class="price-regular">$<span id="price-current">70</span>.00</span>
+                                </div>
+                                <h5 class="offer-text"><strong>Hurry up</strong>! offer ends in:</h5>
+                                <div class="product-countdown d-flex" data-countdown="2021/09/20">
+                                    <div class="single-countdown"><span class="single-countdown__time">00</span><span
+                                            class="single-countdown__text">Days</span></div>
+                                    <div class="single-countdown"><span class="single-countdown__time">00</span><span
+                                            class="single-countdown__text">Hours</span></div>
+                                    <div class="single-countdown"><span class="single-countdown__time">00</span><span
+                                            class="single-countdown__text">Mins</span></div>
+                                    <div class="single-countdown"><span class="single-countdown__time">00</span><span
+                                            class="single-countdown__text">Secs</span></div>
+                                </div>
+                                <div class="availability">
+                                    <i class="fa fa-check-circle"></i>
+                                    <span>200 in stock</span>
+                                </div>
+                                <div class="product_size">
+                                    <div class="size_output my-3">
+                                        Size: <select id="sizeInput">
+                                            <option value="32">32</option>
+                                            <option value="33">33</option>
+                                            <option value="34">34</option>
+                                            <option value="35">35</option>
+
+                                        </select>
+                                    </div>
+                                    <!-- <div
+                                      class="select_size row row-cols-4 px-1"
+                                      id="available-size"
+                                    ></div> -->
+                                </div>
+                                <p class="pro-desc ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy
+                                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                    voluptua. Phasellus id nisi quis justo tempus mollis sed et dui. In hac
+                                    habitasse platea dictumst.</p>
+                                <div class="quantity-cart-box d-flex align-items-center">
+                                    <h6 class="option-title">qty:</h6>
+                                    <div class="quantity">
+                                        <div class="pro-qty">
+                                            <span class="dec qtybtn" onclick="reduce()">-</span>
+                                            <input class="number" id="num" value="1">
+                                            <span class="inc qtybtn" onclick="plus()" >+</span>
+                                        </div>
+                                    </div>
+                                    <div class="action_link">
+                                        <a class="btn btn-cart2" href="#">Add To Cart</a>
+                                    </div>
+                                </div>
+                                <div class="useful-links d-flex">
+                                    <a href="#" data-bs-toggle="tooltip" title="" data-bs-original-title="Compare"><i
+                                            class="fa fa-refresh"></i>compare</a>
+                                    <a href="#" data-bs-toggle="tooltip" title="" data-bs-original-title="Wishlist"><i
+                                            class="fa-regular fa-heart"></i>wishlist</a>
+                                </div>
+                                <div class="like-icon">
+                                    <a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i>like</a>
+                                    <a class="twitter" href="#"><i class="fa-brands fa-twitter"></i>tweet</a>
+                                    <a class="pinterest" href="#"><i class="fa-brands fa-pinterest-p"></i>save</a>
+                                    <a class="google" href="#"><i class="fa-brands fa-google-plus-g"></i>share</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-details-reviews section-padding pb-0">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="product-review-info">
+                                    <ul class="nav review-tab">
+                                        <li>
+                                            <a class="active" data-bs-toggle="tab" href="#tab1">Description</a>
+                                        </li>
+                                        <li>
+                                            <a data-bs-toggle="tab" href="#tab2">Information</a>
+                                        </li>
+                                        <li>
+                                            <a data-bs-toggle="tab" href="#tab3">Reviews (1)</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content reviews-tab">
+                                        <div class="tab-pane fade show active" id="tab1">
+                                            <div class="tab-one">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                                                    fringilla augue nec est tristique auctor. Ipsum metus feugiat
+                                                    sem, quis fermentum turpis eros eget velit. Donec ac tempus
+                                                    ante. Fusce ultricies massa massa. Fusce aliquam, purus eget
+                                                    sagittis vulputate, sapien libero hendrerit est, sed commodo
+                                                    augue nisi non neque.Cras neque metus, consequat et blandit et,
+                                                    luctus a nunc. Etiam gravida vehicula tellus, in imperdiet
+                                                    ligula euismod eget. Pellentesque habitant morbi tristique
+                                                    senectus et netus et malesuada fames ac turpis egestas. Nam
+                                                    erat mi, rutrum at sollicitudin rhoncus
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab2">
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>color</td>
+                                                        <td>black, blue, red</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>size</td>
+                                                        <td>32,33,34,35</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab3">
+                                            <form action="#" class="review-form">
+                                                <h5>1 review for <span>Chaz Kangeroo</span></h5>
+                                                <div class="total-reviews d-flex ">
+                                                    <div class="rev-avatar">
+                                                        <img src="../assets/img/avatar.jpg" alt="">
+                                                    </div>
+                                                    <div class="review-box">
+                                                        <div class="ratings">
+                                                            <span class="good"><i class="fa fa-star"></i></span>
+                                                            <span class="good"><i class="fa fa-star"></i></span>
+                                                            <span class="good"><i class="fa fa-star"></i></span>
+                                                            <span class="good"><i class="fa fa-star"></i></span>
+                                                            <span><i class="fa fa-star"></i></span>
+                                                        </div>
+                                                        <div class="post-author">
+                                                            <p><span>admin -</span> 30 Mar, 2021</p>
+                                                        </div>
+                                                        <p>Aliquam fringilla euismod risus ac bibendum. Sed sit
+                                                            amet sem varius ante feugiat lacinia. Nunc ipsum nulla,
+                                                            vulputate ut venenatis vitae, malesuada ut mi. Quisque
+                                                            iaculis, dui congue placerat pretium, augue erat
+                                                            accumsan lacus</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col">
+                                                        <label class="col-form-label"><span class="text-danger">*</span>
+                                                            Your Name</label>
+                                                        <input type="text" class="form-control" required="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col">
+                                                        <label class="col-form-label"><span class="text-danger">*</span>
+                                                            Your Email</label>
+                                                        <input type="email" class="form-control" required="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col">
+                                                        <label class="col-form-label"><span class="text-danger">*</span>
+                                                            Your Review</label>
+                                                        <textarea class="form-control" required=""></textarea>
+                                                        <div class="help-block pt-10"><span
+                                                                class="text-danger">Note:</span>
+                                                            HTML is not translated!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col">
+                                                        <label class="col-form-label"><span class="text-danger">*</span>
+                                                            Rating</label>
+                                                        &nbsp;&nbsp;&nbsp; Bad&nbsp;
+                                                        <input type="radio" value="1" name="rating">
+                                                        &nbsp;
+                                                        <input type="radio" value="2" name="rating">
+                                                        &nbsp;
+                                                        <input type="radio" value="3" name="rating">
+                                                        &nbsp;
+                                                        <input type="radio" value="4" name="rating">
+                                                        &nbsp;
+                                                        <input type="radio" value="5" name="rating" checked="">
+                                                        &nbsp;Good
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-sqr" type="submit">Continue</button>
+                                                </div>
+                                            </form> <!-- end of review-form -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                        <!-- product details reviews end -->
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="product-gallery section-padding">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title text-center">
+                            <h3 class="title">RELATED PRODUCT</h3>
+                            <h4 class="sub-title">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+                                saepius
+                                claritas est etiam processus dynamicus, qui sequitur mutationem.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="product-carousel">
+                            <div class="product_content d-flex ">
+                                <div class="product_item" style="width: 100%; ;">
+                                    <div class="product-top ">
+                                        <a href="#" tabindex="-1">
+                                            <img src="../assets/img/product/product-1.jpg" alt="product thumb">
+                                        </a>
+                                        <div class="button-group">
+                                            <a href="wishlist.html" data-bs-toggle="tooltip" title=""
+                                                data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist"
+                                                tabindex="-1"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quick_view"
+                                                tabindex="-1"><span data-bs-toggle="tooltip" title=""
+                                                    data-bs-original-title="Quick View" aria-label="Quick View"><i
+                                                        class="fa fa-eye"></i></span></a>
+                                        </div>
+                                        <div class="product-label">
+                                            <span>new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-caption">
+                                            <h6 class="product-name">
+                                                <a href="#" tabindex="-1" id="name">Leather Mens
+                                                    slippers</a>
+                                            </h6>
+                                            <div class="price-box">
+                                                <span class="price-old"><del>$60.00</del></span>
+                                                <span class="price-regular" id="">$50.00</span>
+                                            </div>
+                                            <a class="add-to-cart" href="cart.html" tabindex="-1"><i
+                                                    class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="ratings">
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_item" style="width: 100%; ;">
+                                    <div class="product-top">
+                                        <a href="#" tabindex="-1">
+                                            <img src="../assets/img/product/product-2.jpg" alt="product thumb">
+                                        </a>
+                                        <div class="button-group">
+                                            <a href="wishlist.html" data-bs-toggle="tooltip" title=""
+                                                data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist"
+                                                tabindex="-1"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quick_view"
+                                                tabindex="-1"><span data-bs-toggle="tooltip" title=""
+                                                    data-bs-original-title="Quick View" aria-label="Quick View"><i
+                                                        class="fa fa-eye"></i></span></a>
+                                        </div>
+                                        <div class="product-label">
+                                            <span>new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-caption">
+                                            <h6 class="product-name">
+                                                <a href="#" tabindex="-1">Womens High Hills</a>
+                                            </h6>
+                                            <div class="price-box">
+                                                <span class="price-old"><del>$80.00</del></span>
+                                                <span class="price-regular">$60.00</span>
+                                            </div>
+                                            <a class="add-to-cart" href="cart.html" tabindex="-1"><i
+                                                    class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="ratings">
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_item" style="width: 100%; ;">
+                                    <div class="product-top">
+                                        <a href="#" tabindex="-1">
+                                            <img src="../assets/img/product/product-3.jpg" alt="product thumb">
+                                        </a>
+                                        <div class="button-group">
+                                            <a href="wishlist.html" data-bs-toggle="tooltip" title=""
+                                                data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist"
+                                                tabindex="-1"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quick_view"
+                                                tabindex="-1"><span data-bs-toggle="tooltip" title=""
+                                                    data-bs-original-title="Quick View" aria-label="Quick View"><i
+                                                        class="fa fa-eye"></i></span></a>
+                                        </div>
+                                        <div class="product-label">
+                                            <span>new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-caption">
+                                            <h6 class="product-name">
+                                                <a href="#" tabindex="-1">Leather Mens slippers</a>
+                                            </h6>
+                                            <div class="price-box">
+                                                <span class="price-old"><del>$60.00</del></span>
+                                                <span class="price-regular">$50.00</span>
+                                            </div>
+                                            <a class="add-to-cart" href="cart.html" tabindex="-1"><i
+                                                    class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="ratings">
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="product_item" style="width: 100%; ;">
+                                    <div class="product-top">
+                                        <a href="#" tabindex="-1">
+                                            <img src="../assets/img/product/product-4.jpg" alt="product thumb">
+                                        </a>
+                                        <div class="button-group">
+                                            <a href="wishlist.html" data-bs-toggle="tooltip" title=""
+                                                data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist"
+                                                tabindex="-1"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quick_view"
+                                                tabindex="-1"><span data-bs-toggle="tooltip" title=""
+                                                    data-bs-original-title="Quick View" aria-label="Quick View"><i
+                                                        class="fa fa-eye"></i></span></a>
+                                        </div>
+                                        <div class="product-label">
+                                            <span>new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-caption">
+                                            <h6 class="product-name">
+                                                <a href="#" tabindex="-1">Rexpo Womens shoes</a>
+                                            </h6>
+                                            <div class="price-box">
+                                                <span class="price-old"><del>$100.00</del></span>
+                                                <span class="price-regular">$80.00</span>
+                                            </div>
+                                            <a class="add-to-cart" href="cart.html" tabindex="-1"><i
+                                                    class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="ratings">
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_item" style="width: 100%; ;">
+                                    <div class="product-top">
+                                        <a href="#" tabindex="-1">
+                                            <img src="../assets/img/product/product-4.jpg" alt="product thumb">
+                                        </a>
+                                        <div class="button-group">
+                                            <a href="wishlist.html" data-bs-toggle="tooltip" title=""
+                                                data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist"
+                                                tabindex="-1"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quick_view"
+                                                tabindex="-1"><span data-bs-toggle="tooltip" title=""
+                                                    data-bs-original-title="Quick View" aria-label="Quick View"><i
+                                                        class="fa fa-eye"></i></span></a>
+                                        </div>
+                                        <div class="product-label">
+                                            <span>new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-caption">
+                                            <h6 class="product-name">
+                                                <a href="#" tabindex="-1">Rexpo Womens shoes</a>
+                                            </h6>
+                                            <div class="price-box">
+                                                <span class="price-old"><del>$100.00</del></span>
+                                                <span class="price-regular">$80.00</span>
+                                            </div>
+                                            <a class="add-to-cart" href="cart.html" tabindex="-1"><i
+                                                    class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                        <div class="ratings">
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>  -->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slickcarousel     -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="../assets/jslib/slick.js"></script> -->
+    <!-- <script>
+        $('.product_content').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true
+        });
+    </script> -->
+    <!-- axios  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+        integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- toastify js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.js"
+        integrity="sha512-MnKz2SbnWiXJ/e0lSfSzjaz9JjJXQNb2iykcZkEY2WOzgJIWVqJBFIIPidlCjak0iTH2bt2u1fHQ4pvKvBYy6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- js -->
+
+    <script src="../controllers/controllers.js"></script>
+    <script src="../controllers/api.js"></script>
+    
+    <script src="../controllers/detail.js"></script>
+    <script src="../controllers/other.js"></script>
+
+</body>
+
 </html>
