@@ -30,6 +30,8 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="css/animate.css">
     <style>
       /* Thêm một chút CSS tùy chỉnh để hiển thị submenu khi hover */
       .dropdown:hover .dropdown-menu {
@@ -37,49 +39,222 @@
       }
     </style>
 
-    <!-- mycss         -->
+    <!-- flex-wrap -->
+     <!-- Link tới CSS của Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <style>
+         /* Ghi đè thuộc tính flex-wrap của lớp nav-tabs */
+         .nav-tabs {
+             /* flex-wrap: wrap !important; */
+             flex-wrap: nowrap !important;
+         }
+     </style>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+<style>
+.carousel {
+  position: relative;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 255px;
+  font-size: 18px;
+  color: white;
+  margin-right: 100px;
+}
+
+.top-left2 {
+  position: absolute;
+  top: 128px;
+  left: 256px;
+  font-size: 18px;
+}
+
+.top-left3 {
+  position: absolute;
+  top: 250px;
+  left: 256px;
+  font-size: 18px;
+}
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 140px;
+  font-size: 18px;
+  display: flex;
+}
+.top-right2 {
+  position: absolute;
+  color: #fff;
+   padding-left: 0;
+   margin-bottom: 0;
+   list-style: none;
+  bottom: 0px;
+  left: 486px;
+  font-size: 18px;
+}
+.top-right3 {
+  position: absolute;
+  top: 140px;
+  right: 140px;
+  font-size: 18px;
+}
+
+img { 
+  width: 100%;
+  height: auto;
+  /* opacity: 0.3; */
+}
+</style>
+
+<style>
+  .shop-button {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+  }
+
+  .shop-button:hover {
+      background-color:green;
+  }
+</style>
+
+<!-- Banner -->
+<style>
+  /* .card-custom {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border: none;
+      position: relative;
+  } */
+  
+  /* .card-title {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+  } */
+  
+  /* .btn-custom {
+      background-color: rgba(0, 0, 0, 0.7);
+      border: none;
+      transition: background-color 0.3s ease;
+  } */
+  
+  .card-custom:hover {
+      background-color: green /* Màu xanh */
+  }
+</style>
+
+ <!-- Link tới CSS của Bootstrap -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ <style>
+     /* Loại bỏ border và background */
+     .nav-tabs .nav-link {
+         border: none !important;
+         background-color: transparent !important;
+     }
+
+     /* Loại bỏ border cho tab đang active */
+     .nav-tabs .nav-link.active {
+         border: none !important;
+         background-color: transparent !important;
+     }
+
+     /* Loại bỏ border-bottom cho cả nav-tabs */
+     .nav-tabs {
+         border-bottom: none !important;
+     }
+
+     /* Đảm bảo CSS này sẽ ghi đè CSS mặc định của Bootstrap */
+     .dropdown-menu {
+         border: none !important;
+         box-shadow: none !important;
+     }
+ </style>
+
+ <!-- Hover white -->
+  <style>
+
+ .banner-statistics:before .banner-statistics:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+</style>
+
+    <!-- mycss -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
+      <!-- line header -->
+      <div style="margin: 0; font-family: Arial, sans-serif; background-color: #333; display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+        <!-- Left section (logo and text) -->
+        <div style="display: flex; align-items: center;">
+            <!-- <img src="https://s3.envato.com/storefront/packs/storefront/img/Envato_Market_Home-e874d700ae158aad76e8e4ab34dbdc8e.svg" alt="Envato Market" style="height: 24px; margin-right: 10px;"> -->
+            <span style="color: #8bc34a; font-size: 16px; font-weight: bold;">envato market</span>
+        </div>
+        <!-- Right section (button) -->
+        <div>
+            <button style="background-color: #8bc34a; color: white; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer;">Buy now</button>
+        </div>
+    </div>
+
+
+    <section class="carousel">
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div  class="carousel-item active">
+
     <header style="display: flex" class="container">
       <!-- place navbar here -->
-      <div class="header-left">
+       
+       <div  class="top-left">
+      <div  class="container" class="header-left">
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-solid fa-print"></i>
       </div>
-          <!-- test dropdown -->
-
-      <!-- <div class="container mt-5">
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="text"
-            id="dropdownMenuButton"
-          >
-            Menu
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#option1">Option 1</a>
-            <a class="dropdown-item" href="#option2">Option 2</a>
-            <a class="dropdown-item" href="#option3">Option 3</a>
-          </div>
-        </div>
-      </div> -->
+    
+  </div>
+      
+      <div class="top-right">
       <ul class="nav nav-tabs">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">English</a>
+          <a style="color: #fff" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">English</a>
           <ul class="dropdown-menu">
         
-            <li><a class="dropdown-item" href="#">English</a></li>
-            <li><a class="dropdown-item" href="#">France</a></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            <li  ><a  class="dropdown-item" href="#">English</a></li>
+            <li ><a class="dropdown-item" href="#">France</a></li>
+            <li ><a class="dropdown-item" href="#">Separated link</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Currency</a>
+          <a  style="color: #fff" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Currency</a>
           <ul class="dropdown-menu">
         
             <li><a class="dropdown-item" href="#">USD</a></li>
@@ -90,25 +265,16 @@
         <div>
           <ul class="d-flex flex-row mb-3">
           
-            <div class="d-flex flex-row-reverse">
-              <div class="p-2">My Account</div>
-              <div class="p-2">Check out</div>
+            <div style="color: #fff;" class="d-flex flex-row-reverse">
+              <div   class="p-2">My Account</div>
+              <div  class="p-2">Check out</div>
               <div class="p-2">Sign In</div>
             </div>
           </ul>
         <!-- </div> -->
       </ul>
-      
-     
+    </div>
     </header>
-    <!-- carousel -->
-    <section class="carousel">
-      <!-- Boostrap -->
-
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div  class="carousel-item active">
-          
             <img src="./Image/bg-1.webp" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
@@ -133,17 +299,20 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+        <div class="top-left2">
         <div style="display: flex;" class="container" class="carousel-left">
-          <li>
-            <a href="#">
-              <span>pullman</span>
-              <i class="fa-solid fa-volleyball"></i>
+          <li style="display: flex; list-style: none; margin: 0; padding: 0;" >
+            <a style="color: #fff; font-size: 30px;" href="#">
+              <i  class="fa-solid fa-volleyball"></i>
+              <span style="font-weight: 700;">pullman</span>
             </a>
           </li>
-          <ul class="nav nav-tabs">
+        </div>
+        <div class="top-right2">
+          <ul  class="nav nav-tabs">
             <!-- HOME -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">HOME</a>
+              <a style="color: black;" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">HOME</a>
               <ul class="dropdown-menu">
             
                 <li><a class="dropdown-item" href="#">Home Version 01</a></li>
@@ -157,7 +326,7 @@
             </li>
             <!-- PAGES -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PAGES</a>
+              <a style="color: #fff;" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PAGES</a>
               <ul class="dropdown-menu">
             
                 <li><a class="dropdown-item" href="#">Column 01</a></li>
@@ -169,7 +338,7 @@
             </li>
             <!-- Shop -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">SHOP</a>
+              <a style="color: #fff;" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">SHOP</a>
               <ul class="dropdown-menu">
             
                 <li><a class="dropdown-item" href="#">Shop Grid Layout</a></li>
@@ -179,7 +348,7 @@
             </li>
             <!-- Blog -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">BLOG</a>
+              <a style="color: #fff;" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">BLOG</a>
               <ul class="dropdown-menu">
             
                 <li><a class="dropdown-item" href="#">Blog Left Sidebar</a></li>
@@ -198,48 +367,247 @@
             
             <!-- CONTACT US -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">CONTACT US</a>
-            
+              <a style="color: #fff;" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">CONTACT US</a>
             </li>
           </ul>
         </div>
-        <div class="carousel-center"></div>
-        <div class="carousel right"></div>
-      </div>
-
-      <!-- test column -->
-      <div class="container">
-        <div class="row row-cols-4">
-          <div class="col">
-            <i class="fa-regular fa-heart"></i>
-            <h2>Great Value</h2> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="col">
-            <i class="fa-solid fa-truck"></i>
-            <h2>Worlwide Delivery</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </div>
-          <div class="col">
-            <i class="fa-regular fa-credit-card"></i>
-            <h2>Safe Payment</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </div>
-          <div class="col">
-            <i class="fa-solid fa-headphones-simple"></i>
-            <h2>24/7 Help Center</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </div>
         </div>
+        <!-- <div class="carousel-center"></div> -->
+        <!-- <div class="carousel right"></div> -->
       </div>
+      <div class="top-left3">
+        <div class="animate__animated animate__fadeInUp animate__delay-1s">
+        <h2 style="font-size: 120px; color: rgb(236, 236, 60); font-weight: 800;" >New </h2>
+        <p style="font-size: 46px; font-weight: 500; line-height: 1.1;color: #fff" >Sports Sneakers <br> Men's like Flex</p>
+        <button class="btn-dark shop-button" >Shop Now</button>
+      </div>
+    </div>
+
+      <div class="top-right3">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+
+     
     </section>
     <!-- service -->
-    <section class="service"></section>
+    <section class="service">
+       <!-- test column -->
+<div class="container">
+  <div class="card-deck">
+    <div class="card">
+      <i class="fa-regular fa-heart" style="width: 60px; height: 60px;font-size: 36px; background-color: #00ff00; border-radius: 50%; display: flex; justify-content: center; align-items: center;"></i>
+      <div class="card-body">
+        <h5 class="card-title">Great Value</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-truck" style="width: 60px; height: 60px;font-size: 36px; background-color: #00ff00; border-radius: 50%; display: flex; justify-content: center; align-items: center;"></i>
+      <div class="card-body">
+        <h5 class="card-title">Worlwide Delivery</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      
+    </div>
+    <div class="card">
+      <i class="fa-regular fa-credit-card" style="width: 60px; height: 60px;font-size: 36px; background-color: #00ff00; border-radius: 50%; display: flex; justify-content: center; align-items: center;"></i>
+      <div class="card-body">
+        <h5 class="card-title">Safe Payment</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-headphones-simple" style="width: 60px; height: 60px;font-size: 36px; background-color: #00ff00; border-radius: 50%; display: flex; justify-content: center; align-items: center;"></i>
+      <div class="card-body">
+        <h5 class="card-title">24/7 Help Center</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+    </section>
     <!-- banner -->
-    <section class="banner"></section>
+    <section class="banner">
+
+       <!-- Grid Container -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div
+            class="card card-custom"
+            style="
+              background-color: #333;
+              color: white;
+              text-align: center;
+              padding: 20px;
+              border: none;
+            "
+          >
+            <img src="./Image/1.1.png" class="card-img-top" alt="Shoe 1" />
+            <div class="card-body">
+              <h5
+                class="card-title"
+                style="position: absolute; top: 10px; left: 10px"
+              >
+                MEN
+              </h5>
+              <button
+                class="btn btn-dark btn-custom "
+                style="background-color: rgba(0, 0, 0, 0.7); border: none"
+              >
+                Shop Collections
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div
+            class="card banner-statistics"
+            style="
+              background-color: #333;
+              color: white;
+              text-align: center;
+              padding: 20px;
+              border: none;
+            "
+          >
+            <img src="./Image/1.2.jpg" class="card-img-top" alt="Shoe 2" />
+            <div class="card-body">
+              
+              <button
+                class="btn btn-dark btn-custom"
+                style="background-color: rgba(0, 0, 0, 0.7); border: none"
+              >
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div
+            class="card banner-statistics"
+            style="
+              background-color: #333;
+              color: white;
+              text-align: center;
+              padding: 20px;
+              border: none;
+            "
+          >
+            <img src="./Image/2.1.jpg" class="card-img-top" alt="Shoe 3" />
+            <div class="card-body">
+              <h5
+                class="card-title"
+                style="position: absolute; top: 10px; left: 10px"
+              >
+                MEN
+              </h5>
+              <button
+                class="btn btn-dark"
+                style="background-color: rgba(0, 0, 0, 0.7); border: none"
+              >
+                Shop Collections
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4 mb-4">
+          <div
+            class="card card-custom"
+            style="
+              background-color: #333;
+              color: white;
+              text-align: center;
+              padding: 20px;
+              border: none;
+            "
+          >
+            <img src="./Image/2.2.png " class="card-img-top" alt="Shoe 4" />
+            <div class="card-body">
+              <h5
+                class="card-title"
+                style="position: absolute; top: 10px; left: 10px"
+              >
+                MEN
+              </h5>
+              <button
+                class="btn btn-dark btn-custom"
+                style="background-color: rgba(0, 0, 0, 0.7); border: none"
+              >
+                Shop Collections
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4 mb-4">
+          <div
+            class="card"
+            style="
+              background-color: #333;
+              color: white;
+              text-align: center;
+              padding: 20px;
+              border: none;
+            "
+          >
+            <img src="./Image/3.1.png" class="card-img-top" alt="Shoe 5" />
+            <div class="card-body">
+            
+              <button
+                class="btn btn-dark"
+                style="background-color: rgba(0, 0, 0, 0.7); border: none"
+              >
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4 mb-4">
+          <div
+            class="card banner-statistics"
+            style="
+              background-color: #333;
+              color: white;
+              text-align: center;
+              padding: 20px;
+              border: none;
+            "
+          >
+            <img src="./Image/3.2.jpg" class="card-img-top" alt="Shoe 6" />
+            <div class="card-body">
+             
+              <button
+                class="btn btn-dark btn-custom"
+                style="background-color: rgba(0, 0, 0, 0.7); border: none"
+              >
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </section>
     <!-- product -->
     <section class="product"></section>
     <!-- comment -->
@@ -265,6 +633,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <!-- myjs -->
     <script src="./js/style.js"></script>
   </body>
