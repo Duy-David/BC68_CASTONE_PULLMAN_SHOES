@@ -1,0 +1,32 @@
+@mixin styleSlickArrow($content, $translate) {
+  background-color: $white;
+  border: 1px solid #e5e5e5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  z-index: 999;
+  transform: translate($translate, -50%);
+  transition: all 0.5s;
+  cursor: pointer;
+
+
+  opacity: 0;
+
+  &::before {
+    content: $content;
+    font-weight: $fw-9;
+    color: black;
+    line-height: 20px;
+    font-size: 25px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    transition: all 0.5s;
+  }
+  &:hover {
+    background-color: $green;
+
+    &::before {
+      color: $white;
+    }
+  }
+}

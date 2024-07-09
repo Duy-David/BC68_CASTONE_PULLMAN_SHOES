@@ -1,0 +1,164 @@
+$btn-bg: #87b106;
+$section-pading: 80px;
+$color1:#F3F3F3;
+.bg-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product {
+  padding: $section-pading 0;
+  .section-title {
+    max-width: 65%;
+    margin: -5px auto 37px;
+    .title {
+      font-weight: 900;
+    }
+    .sub-title {
+      font-weight: 400;
+      padding-top: 14px;
+      line-height: 1.6;
+      color: #777777;
+      font-size: 1.2rem;
+    }
+  }
+  
+  .product_carousel {
+    // color: #87b106;
+    .product_content {
+      .product_item {
+        width: 100%;
+        display: inline-block;
+        border: 1px solid #e5e5e5;
+        margin: 0 5px;
+        &:hover{
+          box-shadow: 0 5px 20px 0 rgba(195, 195, 195, 0.6);}
+           
+        .product-top {
+          position: relative;
+          a {
+            img {
+              max-width: 100%;
+              display: block;
+              background: $color1;
+              // height: 300px;
+            }
+          }
+          .button-group {
+            left: 10px;
+            bottom: 0px;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s;
+            :hover {
+              color: #fff;
+              background-color: #87b106;
+              transition: all 0.5s;
+            }
+            a {
+              width: 32px;
+              height: 32px;
+              display: inline-block;
+              font-size: 18px;
+              line-height: 32px;
+              color: #fff;
+              text-align: center;
+              background-color: #555555;
+              transform: scale(1);
+              transform-origin: bottom;
+              transition: all 0.4s;
+              i{line-height: 2.5;}
+            }
+          }
+          .product-label {
+            background: #555555;
+            color: #fff;
+            font-size: 12px;
+            top: 0;
+            right: 0;
+            font-weight: 600;
+            line-height: 1;
+            min-width: 46px;
+            padding: 7px 12px 5px;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+            z-index: 3;
+            span {
+              display: block;
+              margin-top: -1px;
+            }
+          }
+        }
+        .product-bottom {
+          background-color: #fff;
+          padding: 26px 10px 28px 10px;
+          border-top: 1px solid #e5e5e5;
+          .product-caption {
+            position: relative;
+            padding-right: 50px;
+            .product-name {
+              font-weight: 400;
+              text-transform: uppercase;
+              a {
+                color: #555555;
+                text-decoration: none;
+                font-size: 14px;
+              }
+            }
+            .price-box {
+              .price-old {
+                color: #999;
+                padding-right: 5px;
+                font-weight: 400;
+              }
+              .price-regular {
+                color: #d26b31;
+                font-weight: 700;
+              }
+            }
+            .add-to-cart {
+              color: #fff;
+              width: 40px;
+              height: 40px;
+              display: block;
+              line-height: 40px;
+              text-align: center;
+              background-color: $btn-bg;
+              border-radius: 50%;
+              font-size: 18px;
+              top: 5px;
+              right: 0;
+              position: absolute;
+              &:hover {
+                color: #fff;
+                background-color: #d26b31;
+              }
+              i {
+                line-height: 2.5;
+              }
+            }
+          }
+          .ratings {
+            margin-top: 23px;
+            i {
+              font-size: 12px;
+              line-height: 1;
+            }
+          }
+        }
+        &:hover {
+          .button-group {
+            opacity: 1;
+            visibility: visible;
+            a {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+     
+    }
+  }
+}

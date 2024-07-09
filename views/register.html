@@ -1,42 +1,203 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>x</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-    </head>
+<head>
+    <title>Pullman-Register</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/icon.png">
+   
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/register.css" />
+</head>
 
-    <body>
-        <header>
-            <!-- place navbar here -->
-        </header>
-        <main></main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <section class="register">
+        <div class="container">
+            <form id="register_form">
+                <h2>Registration Form</h2>
+                <label for="name">Your Name</label>
+                <input id="name" type="text" placeholder="Enter Your Full Name*" />
+                <span class="name_note"></span>
+                <label for="phone">Your Phone Number</label>
+                <input id="phone" type="text" placeholder="Enter Your Phone Number*" />
+                <span class="phone_note"></span>
+                <label for="email">Your Email</label>
+                <input id="email" type="text" placeholder="Enter Your Email*" />
+                <span class="email_note"></span>
+                <label for="password">Your Password</label>
+                <div class="register_password">
+                    <input id="password" type="text" placeholder="Enter Your Password*" />
+                    <input id="repeatPassword" type="text" placeholder="Repeat Your Password*" />
+                    <span class="password_note"></span>
+                    <span class="repeatPassword_note"></span>
+                </div>
+                <div class="register_gender">
+                    <legend>Select Your Gender</legend>
+                    <!-- <span class="gender_note"></span> -->
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+                    <div class="register_radio">
+                        <div class="register_radio_item">
+                            <input type="radio" id="gender" name="gender" value="true" />
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="register_radio_item">
+                            <input type="radio" id="gender" name="gender" value="false" />
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <button id="register_btn">Register</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <!-- place footer here -->
+
+        <!-- FOOTER TOP -->
+        <div class="footer_top">
+            <div class="container footer_top_content">
+                <!-- LINK -->
+                <div class="footer_link">
+                    <h3>CUSTOM LINKS</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <!-- PRODUCT -->
+                <div class="footer_link">
+                    <h3>PRODUCTS</h3>
+                    <ul>
+                        <li><a href="#">Prices drop</a></li>
+                        <li><a href="#">New products</a></li>
+                        <li><a href="#">Best sales</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Stores</a></li>
+                    </ul>
+                </div>
+                <!-- OUR COMPANY-->
+                <div class="footer_link">
+                    <h3>OUR COMPANY</h3>
+                    <ul>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Legal Notice</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Secure payment</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <!-- YOUR ACCOUNT -->
+                <div class="footer_link">
+                    <h3>YOUR ACCOUNT</h3>
+                    <ul>
+                        <li><a href="#">Personal info</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Credit slips</a></li>
+                        <li><a href="#">Addresses</a></li>
+                        <li><a href="#">Stores</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER MIDDLE -->
+        <div class="footer_mid">
+            <div class="container footer_mid_content">
+                <!-- logo -->
+                <div class="footer_mid_image">
+                    <img src="../assets/image/logo.png" alt="" />
+                </div>
+                <!-- address -->
+                <div class="foodter_mid_item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p><span>ADDRESS :</span> Your address goes here</p>
+                </div>
+                <!-- email -->
+                <div class="foodter_mid_item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>
+                        <span>EMAIL :</span>
+                        <a href="emailto:demo@examplecom"> demo@examplecom</a>
+                    </p>
+                </div>
+                <!-- phone -->
+                <div class="foodter_mid_item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p><span>PHONE :</span> <a href="tel:0123456789"> 0123456789</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER BOT -->
+        <div class="footer_bot">
+            <div class="container footer_bot_content">
+                <!-- PAYMENT -->
+                <img src="../assets/image/payment-2.png" />
+                <!-- link -->
+                <div class="footer_bot_link">
+                    <a href="#">SITE MAP</a>
+                    <a href="#">SEARCH TERMS</a>
+                    <a href="#">ADVANCED SEARCH</a>
+                    <a href="#">ORDERS AND RETURNS</a>
+                    <a class="final_a" href="#">CONTACT US</a>
+                </div>
+                <!-- COPY RIGHT -->
+                <p class="copyright">
+                    © 2021 <b>Pullman</b> Made with <i class="fa-solid fa-heart"></i> by
+                    <a href="#">HasThemes</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+
+    <a href="#" id="scroll-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- TOASTIFY JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- AXIOUS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+        integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- VALIDATION JS -->
+    <script src="./../controllers/validation/validation.js"></script>
+
+    <!-- REGISTER JS -->
+    <script src="../controllers/register.js"></script>
+</body>
+
 </html>

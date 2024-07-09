@@ -1,8 +1,24 @@
-@import './header.scss';
-@import './caurousel.scss';
-@import './service.scss';
-@import './banner.scss';
-@import './product.scss';
-@import './comment.scss';
-@import './blog.scss';
-@import './footer.scss';
+@import './base/base';
+
+@import './helpers/animation';
+@import './helpers/mixin';
+@import './helpers/variable';
+
+@import "./pages/header";
+@import "./pages/caurousel";
+@import "./pages/service";
+@import "./pages/banner";
+
+
+
+@import './pages/product';
+@import './pages/product-lib';
+
+
+@import "./pages/comment";
+@import "./pages/blog";
+@import "./pages/subscribe";
+@import "./pages/footer";
+
+// @import "./pages/register";
+@import "./pages/backtotop";
