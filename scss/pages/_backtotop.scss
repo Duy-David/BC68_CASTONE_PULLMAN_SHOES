@@ -9,13 +9,13 @@
   z-index: 9999;
   transition: 0.4s;
   border-radius: 50%;
-  background-color: #87b106;
+  background-color: $green;
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
   color: $white;
   opacity: 0;
   i {
     line-height: 50px;
     color: #fff;
-    font-size: 25px;
+    font-size: $fs-3;
   }
 }

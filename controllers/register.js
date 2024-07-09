@@ -108,9 +108,9 @@ document.getElementById("register_btn").onclick = (e) => {
         }).showToast();
       })
       .catch((err) => {
-        // console.log(err);
+        console.log(err);
         Toastify({
-          text: `Xin Vui Lòng Thử Lại. Mã Lỗi ${err.response.status}!`,
+          text: `${err.response.data.message}!`,
           duration: 3000,
           style: {
             background: "orange",
