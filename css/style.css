@@ -27,6 +27,14 @@ ul {
     transform: translateX(20px);
   }
 }
+@keyframes spin {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 header {
   position: absolute;
   top: 0;
@@ -116,6 +124,14 @@ header .navbar .badge {
   border: 1px solid #e5e5e5;
   transition: 0.4s;
 }
+.service .policy-block:hover {
+  box-shadow: 5px 20px 0 rgba(195, 195, 195, 0.6);
+}
+.service .policy-block:hover .policy-icon ::after {
+  opacity: 1;
+  visibility: visible;
+  animation: spin 5s infinite linear;
+}
 .service .policy-block .policy-icon {
   color: #fff;
   font-size: 40px;
@@ -128,6 +144,18 @@ header .navbar .badge {
   text-align: center;
   background-color: #87b106;
   position: relative;
+}
+.service .policy-block .policy-icon ::after {
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  content: "";
+  position: absolute;
+  border: 2px dashed #87b106;
+  top: -5px;
+  left: -5px;
+  border-radius: 50%;
+  transition: 0.4s;
+  opacity: 0;
 }
 .service .policy-block .policy-icon i {
   font-size: 36px;
