@@ -27,6 +27,48 @@ ul {
     transform: translateX(20px);
   }
 }
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header.sticky {
+  background: black;
+  opacity: 0.9;
+  color: white;
+}
+header .navbar {
+  padding: 0px;
+}
+header .navbar .navbar-brand {
+  padding: 0px;
+}
+header .navbar .navbar-brand img.logo {
+  height: 60px;
+  background-size: cover;
+  padding: 8px 15px;
+}
+header .navbar .nav-link {
+  color: #ffffff !important;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+header .navbar .nav-link.active {
+  color: #87b106 !important;
+}
+header .navbar .nav-link:hover {
+  color: #87b106 !important;
+}
+header .navbar .nav-link i {
+  font-size: 1.2rem;
+}
+header .navbar .badge {
+  font-size: 0.75rem;
+  padding: 0.25em 0.4em;
+}
+
 footer {
   background-color: #1a1a1a;
 }

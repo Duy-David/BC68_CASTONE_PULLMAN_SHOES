@@ -1,0 +1,42 @@
+.service {
+//   margin-top: -30px;
+  z-index: 990;
+  position: relative;
+  top: -30px;
+  z-index: 1111;
+  .policy-block {
+    padding: 80px 15px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    transition: 0.4s;
+    .policy-icon {
+      color: #fff;
+      font-size: 40px;
+      width: 80px;
+      height: 80px;
+      margin: auto;
+      line-height: 84px;
+      border-radius: 50%;
+      display: block;
+      text-align: center;
+      background-color: #87b106;
+      position: relative;
+      i {
+        font-size: 36px;
+      }
+    }
+    .policy-text {
+        margin-top: 42px;
+      .policy-title {
+        font-weight: 400;
+        margin-bottom: 20px;
+        font-size: 25px;
+      }
+      .policy-desc {
+        font-size: 18px;
+        line-height: 1.2;
+        color: #777777;
+      }
+    }
+  }
+}
