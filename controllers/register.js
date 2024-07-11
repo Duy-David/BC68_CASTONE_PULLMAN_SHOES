@@ -108,10 +108,10 @@ document.getElementById("register_btn").onclick = (e) => {
         }).showToast();
       })
       .catch((err) => {
-        // console.log(err);
+        console.log(err);
         Toastify({
-          text: `Xin Vui Lòng Thử Lại. Mã Lỗi ${err.response.status}!`,
-          duration: 3000,
+          text: `Xin Vui Lòng Thử Lại. ${err.response.data.message}`,
+          duration: 5000,
           style: {
             background: "orange",
           },

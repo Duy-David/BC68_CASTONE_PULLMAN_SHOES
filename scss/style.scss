@@ -1,19 +1,16 @@
-@import './base/base';
+@import "./base/base";
 
-@import './helpers/animation';
-@import './helpers/mixin';
-@import './helpers/variable';
+@import "./helpers/animation";
+@import "./helpers/mixin";
+@import "./helpers/variable";
 
 @import "./pages/header";
 @import "./pages/caurousel";
 @import "./pages/service";
 @import "./pages/banner";
 
-
-
-@import './pages/product';
-@import './pages/product-lib';
-
+@import "./pages/product";
+@import "./pages/product-lib";
 
 @import "./pages/comment";
 @import "./pages/blog";

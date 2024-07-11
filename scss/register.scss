@@ -1,7 +1,7 @@
 @import "./base/base";
 @import "./helpers/variable";
-@import './helpers/animation';
-@import './helpers/mixin';
+@import "./helpers/animation";
+@import "./helpers/mixin";
 @import "./pages/header";
 
 @import "./pages/footer";
@@ -54,6 +54,10 @@
         font-weight: $fw-7;
         display: inline;
         margin-top: 20px;
+      }
+      .gender_note {
+        display: block;
+        // background-color: red;
       }
       .register_radio {
         display: grid;

@@ -274,6 +274,9 @@ footer .footer_bot .footer_bot_content .copyright i {
   display: inline;
   margin-top: 20px;
 }
+.register #register_form .register_gender .gender_note {
+  display: block;
+}
 .register #register_form .register_gender .register_radio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
