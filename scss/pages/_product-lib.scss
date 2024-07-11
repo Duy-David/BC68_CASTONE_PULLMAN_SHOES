@@ -74,6 +74,14 @@ $color1:#F3F3F3;
     }
     .tab-content {
       .product_content {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        @media screen and (max-width: 992px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 576px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
         .product_item {
           //   width: 100%;
           //   display: inline-block;

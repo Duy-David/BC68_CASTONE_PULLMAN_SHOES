@@ -35,7 +35,7 @@ const renderProducts = (renderedProducts = productsArr) => {
       let { category: typeShoe } = firstItem;
       //   console.log(typeShoe);
 
-      content1 += `<div class="product_item col-lg-3" style="width: 23.5%;">
+      content1 += `<div class="product_item" >
         <div class="product-top ">
             <a href="./views/detail.html?productid=${id}" tabindex="-1">
                 <img src="${image}" alt="product thumb" class="w-100" >
