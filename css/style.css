@@ -1219,4 +1219,9 @@ footer .footer_bot .footer_bot_content .copyright i {
   line-height: 50px;
   color: #fff;
   font-size: 25px;
+}
+#scroll-top :hover {
+  background: #d26b31;
+  border-radius: 50%;
+  width: 50px;
 }/*# sourceMappingURL=style.css.map */
