@@ -1,9 +1,13 @@
 .service {
   //   margin-top: -30px;
-  z-index: 990;
   position: relative;
   top: -30px;
   z-index: 1111;
+  @media screen and (max-width: 992px) {
+    position: relative;
+    top: 30px;
+    z-index: 1111;
+  }
   .service-content {
     display: grid;
     gap: 15px;

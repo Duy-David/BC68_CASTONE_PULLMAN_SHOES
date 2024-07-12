@@ -67,6 +67,13 @@ header .navbar .nav-link {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media screen and (max-width: 992px) {
+  header .navbar .nav-link {
+    padding: 2px 1rem;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
 header .navbar .nav-link.active {
   color: #87b106 !important;
 }
