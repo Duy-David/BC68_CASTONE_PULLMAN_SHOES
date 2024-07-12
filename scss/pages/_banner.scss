@@ -1,0 +1,117 @@
+.banner {
+  padding: 80px 0;
+  .banner-grid {
+    .banner-item {
+      .single-category-item {
+        position: relative;
+        padding: 60px 20px 35px 20px;
+        &:hover {
+          &::before {
+            opacity: 0;
+            visibility: hidden;
+          }
+          &::after {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
+        &::before,
+        &::after {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          content: "";
+          z-index: -1;
+          position: absolute;
+          transition: 0.4s;
+          background-image: url(../../assets/img/cat-bg.jpg);
+          background-repeat: no-repeat;
+        }
+        &::after {
+          opacity: 0;
+          visibility: hidden;
+          transition: 0.4s;
+          background-image: url(../../assets/img/cat-hover.jpg);
+          background-repeat: no-repeat;
+        }
+        .category-title {
+          line-height: 1;
+          text-align: center;
+          margin-bottom: 55px;
+
+          a {
+            font-size: 16px;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1;
+            transition: 0.4s;
+            text-decoration: none;
+          }
+        }
+        .category-thumb {
+          margin-bottom: 20px;
+          a {
+            img {
+              max-width: 100%;
+              transition: 0.4s;
+            }
+          }
+        }
+        .shop-collection {
+          margin-top: 70px;
+          .shop-btn {
+            color: #fff;
+            font-size: 20px;
+            line-height: 1;
+            font-weight: 700;
+            padding: 15px 25px;
+            display: inline-block;
+            background-color: #3e3e3e;
+            border-radius: 50px;
+            &:hover{
+              color: #fff;
+              background-color: #222222;
+            }
+          }
+        }
+      }
+      .banner-statistics {
+        position: relative;
+        &:hover {
+          &::before,
+          &::after {
+            transform: scale(1);
+            opacity: 0;
+            transition-duration: 1.3s;
+          }
+        }
+        &::before,
+        &::after {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          content: "";
+          pointer-events: none;
+          position: absolute;
+          background-color: rgba(255, 255, 255, 0.4);
+          transform: scale(0);
+          transform-origin: top left;
+        }
+        &::after {
+          bottom: 0;
+          right: 0;
+          transform-origin: bottom right;
+        }
+        a {
+          img {
+            width: 100%;
+            transition: 0.4s;
+          }
+        }
+      }
+    }
+  }
+}

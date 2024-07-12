@@ -57,6 +57,10 @@ header .navbar .navbar-brand img.logo {
   background-size: cover;
   padding: 8px 15px;
 }
+header .navbar .navbar-toggler {
+  background-color: #87b106;
+  border-color: #87b106;
+}
 header .navbar .nav-link {
   color: #ffffff !important;
   padding: 0.5rem 1rem;

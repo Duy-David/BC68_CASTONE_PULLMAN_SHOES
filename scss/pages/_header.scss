@@ -24,12 +24,17 @@ header {
     // padding: 0 10px;
     .navbar-brand {
       padding: 0px;
+    
       img.logo {
         height: 60px;
 
         background-size: cover;
         padding: 8px 15px;
       }
+    }
+    .navbar-toggler{
+      background-color: $primary-color;
+      border-color: $primary-color;
     }
 
     .nav-link {

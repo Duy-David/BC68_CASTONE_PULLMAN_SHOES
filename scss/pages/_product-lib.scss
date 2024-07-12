@@ -1,6 +1,6 @@
 $btn-bg: #87b106;
 $section-pading: 80px;
-$color1:#F3F3F3;
+$color1: #f3f3f3;
 .bg-img {
   background-size: cover;
   background-position: center;
@@ -88,7 +88,7 @@ $color1:#F3F3F3;
           border: 1px solid #e5e5e5;
           margin: 10px 5px;
           padding: 0;
-          &:hover{
+          &:hover {
             box-shadow: 0 5px 20px 0 rgba(195, 195, 195, 0.6);
           }
           .product-top {
@@ -210,7 +210,7 @@ $color1:#F3F3F3;
               visibility: visible;
               a {
                 transform: scale(1);
-                i{
+                i {
                   line-height: 2;
                 }
               }
@@ -220,27 +220,36 @@ $color1:#F3F3F3;
       }
     }
   }
-  .banner-statistics{
-    
-    &::before,&::after{
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        content: "";
-        pointer-events: none;
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.4);
-        transform: scale(0);
-        transform-origin: top left;
+  .banner-statistics {
+    position: relative;
+      &:hover {
+      &::before,
+      &::after {
+        transform: scale(1);
+        opacity: 0;
+        transition-duration: 1.3s;
+      }
     }
-    a{
-        transition: all 0.5s;
+    &::before,
+    &::after {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.4);
+      transform: scale(0);
+      transform-origin: top left;
     }
-    &::after{
-        bottom: 0;
-        right: 0;
-        transform-origin: bottom right;
+    a {
+      transition: all 0.5s;
+    }
+    &::after {
+      bottom: 0;
+      right: 0;
+      transform-origin: bottom right;
     }
   }
 }
