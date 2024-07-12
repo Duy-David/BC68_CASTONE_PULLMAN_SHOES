@@ -88,6 +88,14 @@ header .navbar .badge {
   padding: 0.25em 0.4em;
 }
 
+.dropdown .dropdown-menu .dropdown-item {
+  font-weight: 700;
+}
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #87b106;
+  color: #ffffff;
+}
+
 footer {
   background-color: #1a1a1a;
 }
