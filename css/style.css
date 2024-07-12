@@ -95,15 +95,35 @@ header .navbar .badge {
 }
 .carousel-head .carousel .carousel-inner .carousel-item .carousel-caption .slide-title {
   font-size: 160px;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1;
   color: #faec07;
+}
+@media screen and (max-width: 992px) {
+  .carousel-head .carousel .carousel-inner .carousel-item .carousel-caption .slide-title {
+    font-size: 130px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel-head .carousel .carousel-inner .carousel-item .carousel-caption .slide-title {
+    font-size: 80px;
+  }
 }
 .carousel-head .carousel .carousel-inner .carousel-item .carousel-caption .slide-subtitle {
   font-size: 60px;
   font-weight: 500;
   line-height: 1.1;
   color: #fff;
+}
+@media screen and (max-width: 992px) {
+  .carousel-head .carousel .carousel-inner .carousel-item .carousel-caption .slide-subtitle {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel-head .carousel .carousel-inner .carousel-item .carousel-caption .slide-subtitle {
+    font-size: 30px;
+  }
 }
 .carousel-head .carousel .carousel-inner .carousel-item .carousel-caption a {
   margin-top: 40px;
@@ -196,9 +216,27 @@ header .navbar .badge {
 .banner {
   padding: 80px 0;
 }
+.banner .banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+@media screen and (max-width: 768px) {
+  .banner .banner-grid {
+    display: inline-block;
+  }
+  .banner .banner-grid .banner-item-position {
+    transform: translateY(0px) !important;
+  }
+  .banner .banner-grid .banner-item {
+    margin: 15px;
+    align-items: center;
+  }
+}
 .banner .banner-grid .banner-item .single-category-item {
   position: relative;
   padding: 60px 20px 35px 20px;
+  width: 100%;
 }
 .banner .banner-grid .banner-item .single-category-item:hover::before {
   opacity: 0;
@@ -292,6 +330,9 @@ header .navbar .badge {
 .banner .banner-grid .banner-item .banner-statistics a img {
   width: 100%;
   transition: 0.4s;
+}
+.banner .banner-grid .banner-item-position {
+  transform: translateY(-302px);
 }
 
 .bg-img {

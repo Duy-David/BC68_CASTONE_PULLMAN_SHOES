@@ -1,13 +1,12 @@
 .carousel-head {
   .carousel {
-    .carousel-control-prev{
-        // left: -60px;
-        width: 8%;
-    } 
-    .carousel-control-next{
-        // right:  -60px;
-    width: 8%;
-
+    .carousel-control-prev {
+      // left: -60px;
+      width: 8%;
+    }
+    .carousel-control-next {
+      // right:  -60px;
+      width: 8%;
     }
     .carousel-inner {
       .carousel-item {
@@ -24,17 +23,28 @@
           //   text-align: center;
           .slide-title {
             font-size: 160px;
-            font-weight: 900;
+            font-weight: 800;
             line-height: 1;
             color: #faec07;
+            @media screen and (max-width: 992px) {
+              font-size: 130px;
+            }
+            @media screen and (max-width: 576px) {
+              font-size: 80px;
+            }
           }
+
           .slide-subtitle {
             font-size: 60px;
             font-weight: 500;
             line-height: 1.1;
             color: #fff;
-            // text-align: left;
-            
+            @media screen and (max-width: 992px) {
+              font-size: 45px;
+            }
+            @media screen and (max-width: 576px) {
+              font-size: 30px;
+            }
           }
           a {
             margin-top: 40px;

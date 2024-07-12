@@ -1,10 +1,24 @@
 .banner {
   padding: 80px 0;
   .banner-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    @media screen and (max-width: 768px) {
+      display: inline-block;
+      .banner-item-position {
+        transform: translateY(0px) !important;
+      }
+      .banner-item {
+        margin: 15px;
+        align-items: center;
+      }
+    }
     .banner-item {
       .single-category-item {
         position: relative;
         padding: 60px 20px 35px 20px;
+        width: 100%;
         &:hover {
           &::before {
             opacity: 0;
@@ -70,7 +84,7 @@
             display: inline-block;
             background-color: #3e3e3e;
             border-radius: 50px;
-            &:hover{
+            &:hover {
               color: #fff;
               background-color: #222222;
             }
@@ -112,6 +126,10 @@
           }
         }
       }
+    }
+    .banner-item-position {
+      // position: absolute;
+      transform: translateY(-302px);
     }
   }
 }
