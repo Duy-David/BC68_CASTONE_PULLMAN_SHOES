@@ -229,7 +229,7 @@ header .navbar .badge {
     transform: translateY(0px) !important;
   }
   .banner .banner-grid .banner-item {
-    margin: 15px;
+    margin: 15px 80px;
     align-items: center;
   }
 }
