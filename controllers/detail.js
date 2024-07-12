@@ -90,7 +90,7 @@ window.onload = function () {
                                     <span class="price-old"><del>$<span id="price-old" value=${
                                       price + discount
                                     }>${price + discount}</span>.00</del></span>
-                                    <span class="price-regular">$<span id="price-current" value=${price}>${price}</span>.00</span>
+                                    <span class="price-regular">$${price}.00</span>
                                 </div>
                                 <h5 class="offer-text"><strong>Hurry up</strong>! offer ends in:</h5>
                                 <div class="product-countdown d-flex" data-countdown="2021/09/20">
@@ -300,7 +300,7 @@ window.onload = function () {
             </h6>
              <div class="price-box">
              <span class="price-old"><del>$${price + discount}.00</del></span>
-             <span  class="price-regular">${price}.00</span>
+             <span  class="price-regular">$${price}.00</span>
               </div>
              <a class="add-to-cart" href="./detail.html?productid=${id}" tabindex="-1"><i
                  class="fa fa-shopping-cart"></i></a>

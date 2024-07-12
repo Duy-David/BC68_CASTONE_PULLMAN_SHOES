@@ -505,6 +505,7 @@ $color1: #f3f3f3;
               font-size: 18px;
               top: 5px;
               right: 0;
+              // font-size: 14px;
               position: absolute;
               &:hover {
                 color: #fff;
@@ -622,10 +623,10 @@ $color1: #f3f3f3;
             }
             .add-to-cart {
               color: #fff;
-              width: 28px;
-              height: 28px;
+              width: 40px;
+              height: 40px;
               display: block;
-              line-height: 28px;
+              line-height: 40px;
               text-align: center;
               background-color: $btn-bg;
               border-radius: 50%;
