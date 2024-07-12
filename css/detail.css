@@ -700,7 +700,7 @@ footer .footer_bot .footer_bot_content .copyright i {
   text-align: center;
   background-color: #87b106;
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 12px;
   top: 5px;
   right: 0;
   position: absolute;
@@ -811,10 +811,10 @@ footer .footer_bot .footer_bot_content .copyright i {
 }
 .product-gallery .product-carousel .product_content .product_item .product-bottom .product-caption .add-to-cart {
   color: #fff;
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
   display: block;
-  line-height: 28px;
+  line-height: 40px;
   text-align: center;
   background-color: #87b106;
   border-radius: 50%;
