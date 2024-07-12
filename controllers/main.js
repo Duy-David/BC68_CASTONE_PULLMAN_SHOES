@@ -77,7 +77,7 @@ const renderProducts = (renderedProducts = productsArr) => {
         </div>
     </div>`;
       if (typeShoe == "VANS_CONVERSE") {
-        content2 += `<div class="product_item col-lg-3" style="width: 23.5%;">
+        content2 += `<div class="product_item " >
         <div class="product-top ">
             <a href="./views/detail.html?productid=${id}" tabindex="-1">
                 <img src="${image}" alt="product thumb" class="w-100" >
@@ -119,7 +119,7 @@ const renderProducts = (renderedProducts = productsArr) => {
         </div>
     </div>`;
       } else if (typeShoe == "NIKE") {
-        content3 += `<div class="product_item col-lg-3" style="width: 23.5%;">
+        content3 += `<div class="product_item " >
         <div class="product-top ">
             <a href="./views/detail.html?productid=${id}" tabindex="-1">
                 <img src="${image}" alt="product thumb" class="w-100" >
@@ -161,7 +161,7 @@ const renderProducts = (renderedProducts = productsArr) => {
         </div>
     </div>`;
       } else if (typeShoe == "ADIDAS") {
-        content4 += `<div class="product_item col-lg-3" style="width: 23.5%;">
+        content4 += `<div class="product_item " >
     <div class="product-top ">
         <a href="./views/detail.html?productid=${id}" tabindex="-1">
             <img src="${image}" alt="product thumb" class="w-100" >
