@@ -140,7 +140,7 @@ header .navbar .badge {
     font-size: 30px;
   }
 }
-.carousel-head .carousel .carousel-inner .carousel-item .carousel-caption a {
+.carousel-head .carousel .carousel-inner .carousel-item .carousel-caption button {
   margin-top: 40px;
   font-size: 20px;
   font-weight: 700;
@@ -149,6 +149,22 @@ header .navbar .badge {
   padding: 15px 30px;
   background-color: #222222;
   border-radius: 50px;
+}
+.carousel-head .carousel .carousel-inner .carousel-item .carousel-caption button:hover {
+  background-color: #87b106;
+}
+.carousel-head .carousel .carousel-inner .carousel-item-chill .carousel-caption button {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  padding: 15px 30px;
+  background-color: #222222;
+  border-radius: 50px;
+}
+.carousel-head .carousel .carousel-inner .carousel-item-chill .carousel-caption button:hover {
+  background-color: #d26b31;
 }
 
 .service {
