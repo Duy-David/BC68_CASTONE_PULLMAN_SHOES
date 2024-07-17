@@ -292,6 +292,7 @@ footer .footer_bot .footer_bot_content .copyright i {
 .product-details .product-details-inner .detail_display .product-card__info .product-details-des .product-name {
   font-weight: 700;
   padding-bottom: 15px;
+  text-transform: uppercase;
 }
 .product-details .product-details-inner .detail_display .product-card__info .product-details-des .ratings {
   font-size: 16px;
