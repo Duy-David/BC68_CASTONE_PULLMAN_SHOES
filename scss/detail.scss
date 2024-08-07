@@ -1,11 +1,10 @@
 @import "./base/base";
 @import "./helpers/variable";
-@import './helpers/animation';
-@import './helpers/mixin';
+@import "./helpers/animation";
+@import "./helpers/mixin";
 @import "./pages/header";
 @import "./pages/footer";
 @import "./pages/backtotop";
-
 
 $btn-bg: #87b106;
 $section-pading: 80px;
@@ -573,6 +572,12 @@ $color1: #f3f3f3;
               transform: scale(1);
               transform-origin: bottom;
               transition: all 0.4s;
+              span {
+                width: 32px;
+                height: 32px;
+                line-height: 32px;
+                display: inline-block;
+              }
             }
           }
           .product-label {

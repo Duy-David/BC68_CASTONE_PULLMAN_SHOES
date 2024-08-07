@@ -451,6 +451,12 @@ header .navbar .badge {
   transform-origin: bottom;
   transition: all 0.4s;
 }
+.product .product_carousel .product_content .product_item .product-top .button-group a span {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
+}
 .product .product_carousel .product_content .product_item .product-top .product-label {
   background: #555555;
   color: #fff;
@@ -657,6 +663,12 @@ header .navbar .badge {
   transform: scale(1);
   transform-origin: bottom;
   transition: all 0.4s;
+}
+.product-gallery .product-lib .tab-content .product_content .product_item .product-top .button-group a span {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
 }
 .product-gallery .product-lib .tab-content .product_content .product_item .product-top .product-label {
   background: #555555;

@@ -769,6 +769,12 @@ footer .footer_bot .footer_bot_content .copyright i {
   transform-origin: bottom;
   transition: all 0.4s;
 }
+.product-gallery .product-carousel .product_content .product_item .product-top .button-group a span {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
+}
 .product-gallery .product-carousel .product_content .product_item .product-top .product-label {
   background: #555555;
   color: #fff;

@@ -77,6 +77,12 @@ $color1: #f3f3f3;
               transform: scale(1);
               transform-origin: bottom;
               transition: all 0.4s;
+              span {
+                width: 32px;
+                height: 32px;
+                line-height: 32px;
+                display: inline-block;
+              }
             }
           }
           .product-label {

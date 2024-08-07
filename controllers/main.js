@@ -41,7 +41,7 @@ const renderProducts = (renderedProducts = productsArr) => {
                 <img src="${image}" alt="product thumb" class="w-100" >
             </a>
             <div class="button-group">
-                <a href="wishlist.html" data-bs-toggle="tooltip" title=""
+                <a href="#" data-bs-toggle="tooltip" title=""
                     data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist"
                     tabindex="-1"><i class="fa-regular fa-heart"></i></a>
                 <a href="./views/detail.html?productid=${id}" data-bs-toggle="modal" data-bs-target="#quick_view"
@@ -83,7 +83,7 @@ const renderProducts = (renderedProducts = productsArr) => {
                 <img src="${image}" alt="product thumb" class="w-100" >
             </a>
             <div class="button-group">
-                <a href="wishlist.html" data-bs-toggle="tooltip" title=""
+                <a href="#" data-bs-toggle="tooltip" title=""
                     data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist"
                     tabindex="-1"><i class="fa-regular fa-heart"></i></a>
                 <a href="./views/detail.html?productid=${id}" data-bs-toggle="modal" data-bs-target="#quick_view"
@@ -125,7 +125,7 @@ const renderProducts = (renderedProducts = productsArr) => {
                 <img src="${image}" alt="product thumb" class="w-100" >
             </a>
             <div class="button-group">
-                <a href="wishlist.html" data-bs-toggle="tooltip" title=""
+                <a href="#" data-bs-toggle="tooltip" title=""
                     data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist"
                     tabindex="-1"><i class="fa-regular fa-heart"></i></a>
                 <a href="./views/detail.html?productid=${id}" data-bs-toggle="modal" data-bs-target="#quick_view"
@@ -167,7 +167,7 @@ const renderProducts = (renderedProducts = productsArr) => {
             <img src="${image}" alt="product thumb" class="w-100" >
         </a>
         <div class="button-group">
-            <a href="wishlist.html" data-bs-toggle="tooltip" title=""
+            <a href="#" data-bs-toggle="tooltip" title=""
                 data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist"
                 tabindex="-1"><i class="fa-regular fa-heart"></i></a>
             <a href="./views/detail.html?productid=${id}" data-bs-toggle="modal" data-bs-target="#quick_view"
